@@ -1,0 +1,292 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,500,600);
+
+// Variables
+//@import "variables";
+// Bootstrap
+//@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+.front-main-footer{
+  margin: 0;
+  margin-top: 15px;
+  padding: 15px;
+  background-color: #373737;
+}
+
+
+/*=================|| Front page products ||=========================0*/
+.product-container{
+  position: relative;
+  margin-bottom: 25px;
+  padding: 15px;
+  border: 1px solid #c8c8c8;
+  text-align: center;
+  background: #fff;
+  transition: all 0.15s ease-in-out;
+
+  .product-link:link,
+  .product-link:visited{
+    color: #444;
+  }
+  
+  .product-container-img{
+    margin: 0 auto;
+    height: 175px;
+    overflow: hidden;
+  }
+
+  img{
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  h4{
+    text-transform: uppercase;
+  }
+  .product-pricing{
+    color: #545454;
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 3px;
+  }
+
+  .container-description{
+    position: relative;
+    height: 22px;
+
+    .product-description{
+      color: #96A3AA;
+      padding-top: 5px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .product-description:before{
+      content: '';
+      width: 10%;
+      position: absolute;
+      top: 0;
+      left: 45%;
+      border-top: 1px solid #777;
+    }
+  }
+}
+.product-container:hover,
+.product-container:active,
+.product-container:focus {
+  color: #d54d4d;
+  border: 1px solid #96a3aa;
+  box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.3);
+}
+
+/*=====================|| Store - view Product || =================================*/
+.store-media{
+  img{
+    width: 100%;
+  }
+}
+
+/*======================|| Image in inputs ||===========================*/
+/* Contenedor de imagen*/
+.imageUploadWidget {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  display: block;
+  height: 170px;
+  width: 100%;
+
+  .imageArea {
+    height: 125px;
+    line-height: 125px;
+    text-align: center;
+    vertical-align: middle;
+  }
+  .imageArea{
+    img{
+    max-height: 115px;
+    max-width: 160px;
+    vertical-align: middle;
+    display: inline-block;
+    }
+
+    .spinner-image{
+      display: none;
+      height: 50px;
+      width: 50px;
+    }
+  }
+
+  .btnArea {
+    background-color: #ddd;
+    font-size: 12px;
+    height: 44px;
+    line-height: 46px;
+    overflow: hidden;
+    vertical-align: middle;
+  }
+}
+
+.imageUploadWidget.has-error,
+.has-error .imageUploadWidget{
+  border: 1px solid #dd4b39 !important;
+}
+.imageUploadWidget.has-error .btnArea,
+.has-error .imageUploadWidget .btnArea{
+  background-color: #dd4b39 !important;
+}
+
+/*====================| Botones |===========================*/
+/*=====================|| Grey ||==============================*/
+.btn-grey {
+  color: #fff;
+  background-color: #636b6f;
+  border-color: #5a6265;
+  transition: all 0.15s ease-in-out;
+}
+.btn-grey:hover,
+.btn-grey:active,
+.btn-grey.hover {
+  color: #fff;
+  background-color: #5a6265;
+  border-color: #494751;
+}
+.btn-grey.grey-outline:focus,
+.btn-grey.grey-outline:active{
+  color: #fff;
+}
+.btn-grey.grey-outline:hover{
+  color: #222;
+  background-color: #fff;
+  border-color: #494751;
+}
+
+/*=====================|| Poison ||==============================*/
+.btn-poison {
+  color: #fff;
+  background-color: #605CA8;
+  border-color: #555299;
+}
+.btn-poison:focus,
+.btn-poison.focus {
+  color: #fff;
+  background-color: #4B4982;
+  border-color: #3D3B68;
+}
+.btn-poison:hover {
+  color: #fff;
+  background-color: #4B4982;
+  border-color: #3D3B68;
+}
+.btn-poison:active,
+.btn-poison.active,
+.open > .dropdown-toggle.btn-poison {
+  color: #fff;
+  background-color: #4B4982;
+  border-color: #3D3B68;
+}
+.btn-poison:active:hover,
+.btn-poison.active:hover,
+.open > .dropdown-toggle.btn-poison:hover,
+.btn-poison:active:focus,
+.btn-poison.active:focus,
+.open > .dropdown-toggle.btn-poison:focus,
+.btn-poison:active.focus,
+.btn-poison.active.focus,
+.open > .dropdown-toggle.btn-poison.focus {
+  color: #fff;
+  background-color: #4B4982;
+  border-color: #3D3B68;
+}
+.btn-poison:active,
+.btn-poison.active,
+.open > .dropdown-toggle.btn-poison {
+  background-image: none;
+}
+.btn-poison.disabled:hover,
+.btn-poison[disabled]:hover,
+fieldset[disabled] .btn-poison:hover,
+.btn-poison.disabled:focus,
+.btn-poison[disabled]:focus,
+fieldset[disabled] .btn-poison:focus,
+.btn-poison.disabled.focus,
+.btn-poison[disabled].focus,
+fieldset[disabled] .btn-poison.focus {
+  background-color: #8C16A6;
+  border-color: #6E0984;
+}
+
+.btn-poison {
+  color: #fff;
+  background-color: #605CA8;
+  border-color: #555299;
+}
+.btn-poison:focus,
+.btn-poison.focus {
+  color: #fff;
+  background-color: #4B4982;
+  border-color: #3D3B68;
+}
+.btn-poison:hover {
+  color: #fff;
+  background-color: #4B4982;
+  border-color: #3D3B68;
+}
+.btn-poison:active,
+.btn-poison.active,
+.open > .dropdown-toggle.btn-poison {
+  color: #fff;
+  background-color: #4B4982;
+  border-color: #3D3B68;
+}
+.btn-poison:active:hover,
+.btn-poison.active:hover,
+.open > .dropdown-toggle.btn-poison:hover,
+.btn-poison:active:focus,
+.btn-poison.active:focus,
+.open > .dropdown-toggle.btn-poison:focus,
+.btn-poison:active.focus,
+.btn-poison.active.focus,
+.open > .dropdown-toggle.btn-poison.focus {
+  color: #fff;
+  background-color: #4B4982;
+  border-color: #3D3B68;
+}
+.btn-poison:active,
+.btn-poison.active,
+.open > .dropdown-toggle.btn-poison {
+  background-image: none;
+}
+.btn-poison.disabled:hover,
+.btn-poison[disabled]:hover,
+fieldset[disabled] .btn-poison:hover,
+.btn-poison.disabled:focus,
+.btn-poison[disabled]:focus,
+fieldset[disabled] .btn-poison:focus,
+.btn-poison.disabled.focus,
+.btn-poison[disabled].focus,
+fieldset[disabled] .btn-poison.focus {
+  background-color: #8C16A6;
+  border-color: #6E0984;
+}
+
+.perfil{
+  position: relative;
+  background: #fff;
+  border: 1px solid #f4f4f4;
+  padding: 20px;
+  margin: 10px 25px;
+}
+
+
+/*Eliminar las flechas en input type number*/
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+input[type="number"]{
+    -moz-appearance:textfield !important; /*Hacer que parezca un campo de texto en firefox*/
+}
