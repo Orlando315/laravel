@@ -1,12 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,500,600);
 
-.front-main-footer {
-  margin: 0;
-  margin-top: 15px;
-  padding: 15px;
-  background-color: #373737;
-}
-
 /*=================|| Front page products ||=========================0*/
 
 .product-container {
@@ -295,8 +288,24 @@ fieldset[disabled] .btn-poison.focus {
   margin: 10px 25px;
 }
 
-/*Eliminar las flechas en input type number*/
 
+.front-main-footer {
+	color: #aaa;
+  margin: 0;
+  margin-top: 15px;
+  padding: 15px;
+  background-color: #373737;
+}
+.designer{
+	position: relative;
+	height: 25px;
+}
+.designer img{
+	height: 100%;
+	max-width: 100%;
+}
+
+/*Eliminar las flechas en input type number*/
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
   /* display: none; <- Crashes Chrome on hover */

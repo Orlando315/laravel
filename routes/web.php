@@ -18,7 +18,11 @@ Route::get('/cart','ShoppingCartsController@index')->name('cart');
 
 Route::resource('in_shopping_carts','InShoppingCartsController', ['only' => 'store','destroy']);
 
-Auth::routes();
+//Auth::routes();
 Route::resource('products','ProductsController');
+
+//Rutas de usuarios para el Front
+Route::get('/register','UsersController@create')->name('new_user');
+Route::resource('users','UsersController');
 
 Route::get('/home', 'HomeController@index');

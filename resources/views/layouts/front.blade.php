@@ -73,18 +73,18 @@
   	<div class="container">
   		<header class="row">
   			<div class="col-md-12">
-	      @if (Route::has('login'))
 	        <div class="pull-right links">
 	        	<ul class="nav navbar-nav">
               <li><a href="{{ route('index') }}">Home</a></li>
               <li><a href="{{ route('cart') }}">Cart ( {{ $shopping_cart }} )</a></li>
 	            @if (!Auth::check())
 	              <li><a href="{{ url('/login') }}">Login</a></li>
-	              <li><a href="{{ url('/register') }}">Register</a></li>
+	              <li><a href="{{ route('new_user') }}">Register</a></li>
+	            @else
+	            	<li><a href="{{ route('/account') }}">My account</a></li>
 	            @endif
 	          </ul>
 	        </div>
-	      @endif
 	      </div>
     	</header>
 
@@ -94,8 +94,13 @@
     <footer class="front-main-footer">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            &nbsp;
+          <div class="col-md-4 col-md-offset-4 text-center">
+          	Designed by
+            <div class="designer">
+            	<a href="http://project4design.com.ve">
+            		<img src="http://www.project4design.com.ve/logos/logo-gris.png" alt="Project 4 Design">
+            	</a>
+            </div>
           </div>
         </div>
       </div>
