@@ -11,7 +11,7 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">Login</div>
 				<div class="panel-body">
-					<form class="form-horizontal" role="form" method="POST" action="{{ route('login') }}">
+					<form class="form-horizontal" role="form" method="POST" action="{{ route('auth') }}">
 						{{ csrf_field() }}
 
 						<div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
@@ -57,10 +57,6 @@
 								<button type="submit" class="btn btn-flat btn-grey">
 									Login
 								</button>
-
-								<a class="btn btn-flat btn-link" href="{{ route('password.request') }}">
-									Forgot Your Password?
-								</a>
 							</div>
 						</div>
 					</form>

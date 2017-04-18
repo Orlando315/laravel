@@ -78,10 +78,19 @@
               <li><a href="{{ route('index') }}">Home</a></li>
               <li><a href="{{ route('cart') }}">Cart ( {{ $shopping_cart }} )</a></li>
 	            @if (!Auth::check())
-	              <li><a href="{{ url('/login') }}">Login</a></li>
+	              <li><a href="{{ route('login') }}">Login</a></li>
 	              <li><a href="{{ route('new_user') }}">Register</a></li>
 	            @else
-	            	<li><a href="{{ route('/account') }}">My account</a></li>
+	            	<li><a href="{{ route('account') }}">My account</a></li>
+	            	<li>
+	                <a href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+	                  Logout
+	                </a>
+
+	                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+	                    {{ csrf_field() }}
+	                </form>
+		            </li>
 	            @endif
 	          </ul>
 	        </div>

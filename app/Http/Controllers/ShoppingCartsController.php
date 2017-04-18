@@ -17,8 +17,6 @@ class ShoppingCartsController extends Controller
 
 		$products = $shopping_cart->productsInCart();
 
-		dd($products);
-
 		$total = $shopping_cart->total();
 
   	return view('store.cart',['products'=>$products,'total' => $total]);
